@@ -10,5 +10,5 @@ startBtn.onclick = () => {
 };
 
 openBook.onclick = () => {
-    alert("Next page coming soon... ❤️");
+    alert("my love letter");
 };

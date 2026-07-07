@@ -10,5 +10,5 @@ startBtn.onclick = () => {
 };
 
 openBook.onclick = () => {
-    alert("my love letter");
+    alert("window.location.href = "loveletter.html";");
 };

@@ -1,10 +1,70 @@
 body{
-    background:#fff8f8;
-    font-family:Arial, sans-serif;
-    text-align:center;
-    padding:50px;
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#fff8f5,#fdeff4);
+    overflow-x:hidden;
 }
 
-h1{
-    color:#ff4d88;
+.hidden{
+    display:none;
+}
+
+#loading{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+#loading h2{
+    font-family:'Caveat',cursive;
+    font-size:50px;
+    color:#ff5b93;
+}
+
+#loading p{
+    font-size:20px;
+    color:#555;
+}
+
+button{
+    margin-top:30px;
+    background:#ff7aa8;
+    color:white;
+    border:none;
+    padding:16px 35px;
+    border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.cover{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:30px;
+}
+
+.cover h1{
+    font-family:'Caveat',cursive;
+    font-size:65px;
+    color:#ff4f87;
+}
+
+.cover p{
+    font-size:20px;
+    max-width:600px;
+    color:#555;
 }

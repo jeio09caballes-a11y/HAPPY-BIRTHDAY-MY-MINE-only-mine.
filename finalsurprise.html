@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ff7eb3,#ff758c,#ffb199);
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+    color:white;
+}
+
+.card{
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    border-radius:25px;
+    max-width:700px;
+}
+
+h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:22px;
+    line-height:1.7;
+}
+
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:25px;
+    animation:float 8s linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🎉 Happy Birthday, Mickey ❤️</h1>
+
+<p>
+Thank you for reading my little scrapbook.
+</p>
+
+<p>
+I made every page with love because you deserve something made just for you.
+</p>
+
+<p>
+I know we're celebrating through a screen today...
+but I believe one day I'll be celebrating beside you instead.
+</p>
+
+<p>
+Until that day comes...
+I'll continue choosing you,
+loving you,
+and praying for us.
+</p>
+
+<h2>
+I love you so much. ❤️
+</h2>
+
+<p>
+— Jeio / Yuji 🫶
+</p>
+
+</div>
+
+<script>
+
+function makeHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),9000);
+
+}
+
+setInterval(makeHeart,300);
+
+</script>
+
+</body>
+</html>

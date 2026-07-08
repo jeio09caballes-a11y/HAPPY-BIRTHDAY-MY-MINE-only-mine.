@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15 Reasons ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#fff0f5;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:600px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+h1{
+color:#ff4f87;
+}
+
+#reason{
+font-size:22px;
+margin:30px 0;
+line-height:1.6;
+}
+
+button{
+background:#ff6fa5;
+color:white;
+border:none;
+padding:15px 35px;
+font-size:18px;
+border-radius:50px;
+cursor:pointer;
+margin:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>15 Reasons Why I Love You ❤️</h1>
+
+<div id="reason">
+Press the button below ❤️
+</div>
+
+<button onclick="nextReason()">
+Next Reason ❤️
+</button>
+
+<br><br>
+
+<button onclick="window.location.href='future.html'">
+Continue 🌎
+</button>
+
+</div>
+
+<script>
+
+const reasons=[
+
+"Because no matter how many times we fight, we always find our way back to each other.",
+
+"Because you make ordinary moments feel like my favorite memories.",
+
+"Because even from miles away, you still make me feel at home.",
+
+"Because your smile makes my worst days better.",
+
+"Because you stayed when loving each other wasn't always easy.",
+
+"Because you believe in us.",
+
+"Because every message from you makes my day.",
+
+"Because you inspire me to become a better man.",
+
+"Because I can always be myself with you.",
+
+"Because you're my safest place.",
+
+"Because I dream about our future together.",
+
+"Because I want us to grow closer to God together.",
+
+"Because every memory with you is precious.",
+
+"Because you make me smile without even trying.",
+
+"Because out of everyone in this world... my heart will always choose you."
+
+];
+
+let index=0;
+
+function nextReason(){
+
+document.getElementById("reason").innerHTML=reasons[index];
+
+index++;
+
+if(index>=reasons.length){
+
+index=0;
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

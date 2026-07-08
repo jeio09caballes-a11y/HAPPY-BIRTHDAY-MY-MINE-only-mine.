@@ -1,54 +1,103 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#ffd6e7,#fff5f8,#ffeef5);
+    background:linear-gradient(135deg,#0F172A,#172554,#312E81);
+    color:#F8FAFC;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
-    overflow:hidden;
+    overflow-x:hidden;
+    padding:20px;
 }
 
-#loading{
-    background:rgba(255,255,255,.92);
+#loading,
+.cover,
+.letter,
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:28px;
     padding:40px;
-    width:90%;
-    max-width:420px;
-    border-radius:25px;
-    text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    width:100%;
+    max-width:700px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    animation:fadeUp .9s ease;
 }
 
-h2{
-    color:#ff4f87;
-    font-size:32px;
-    margin-bottom:15px;
-    font-family:'Caveat',cursive;
+h1,h2{
+    font-family:'Playfair Display',serif;
+    color:#DDD6FE;
+    text-align:center;
+    margin-bottom:18px;
 }
 
 p{
-    color:#555;
-    font-size:18px;
-    line-height:1.7;
+    color:#E2E8F0;
+    text-align:center;
+    line-height:1.9;
+    font-size:17px;
 }
 
 button{
     margin-top:25px;
-    background:#ff5f9d;
-    color:white;
-    border:none;
     padding:15px 35px;
-    border-radius:50px;
-    font-size:18px;
+    border:none;
+    border-radius:999px;
+    background:linear-gradient(135deg,#8B5CF6,#6366F1);
+    color:white;
+    font-size:16px;
+    font-weight:600;
     cursor:pointer;
     transition:.3s;
 }
 
 button:hover{
-    transform:scale(1.05);
-    box-shadow:0 10px 20px rgba(255,95,157,.35);
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(139,92,246,.45);
+}
+
+.photo{
+    width:100%;
+    max-width:320px;
+    display:block;
+    margin:30px auto;
+    border-radius:18px;
+    border:8px solid white;
+    box-shadow:0 12px 35px rgba(0,0,0,.4);
+    transform:rotate(-2deg);
+    transition:.3s;
+}
+
+.photo:nth-child(even){
+    transform:rotate(2deg);
+}
+
+.photo:hover{
+    transform:scale(1.03) rotate(0deg);
 }
 
 .hidden{
     display:none;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
